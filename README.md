@@ -99,8 +99,10 @@ Design decisions that must be preserved:
 - **Fonts** are self-hosted from `public/assets/fonts/`. Their OFL licenses are in
   `public/assets/fonts/licenses/`. Keep them when redistributing.
 - **Project 001 logo** (`public/assets/brand/`) is the official mark — do not edit it.
-- **Nova and Aegis logos are not available yet.** Those cards use typographic
-  placeholders. Replace the placeholder when official marks are supplied.
+- **Nova and Aegis have no official logo.** Their cards intentionally use typographic
+  treatments (wordmark for Nova, archive strip for Aegis); these are not placeholders
+  waiting to be replaced.
+- **Astra** uses the supplied Astra logo.
 - New images should keep explicit `width`/`height` attributes; `npm run verify` fails
   on images without them.
 
@@ -160,5 +162,6 @@ Vite and checked by `npm run verify`.
 
 - **Contact section** intentionally says “Pending publication” / “Unavailable”.
   No official email or social accounts have been supplied; do not invent them.
-- **Nova and Aegis logos** are typographic placeholders until official marks exist.
+- **Nova and Aegis have no logo**, confirmed — their typographic treatments are the
+  intended design, not temporary placeholders.
 - The Vercel URL is a free-tier subdomain, not a long-term brand domain.

@@ -98,7 +98,7 @@ export default function ProjectCard({
             {project.name}
           </span>
           <span className="project__wordmark-label" aria-hidden="true">
-            Typographic wordmark · official mark pending
+            Typographic wordmark
           </span>
         </div>
 

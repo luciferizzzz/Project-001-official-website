@@ -64,10 +64,10 @@ export const PROJECTS: Project[] = [
     id: 'nova',
     index: '02',
     name: 'Nova',
-    category: 'Project identity',
+    category: 'Local news intelligence',
     description:
-      'Nova is a project developed under Project 001. Its public description and official identity have not yet been released.',
-    note: 'This record will be updated when official information is available.',
+      'Nova is a local-first news intelligence system. It gathers RSS sources into a private, searchable dashboard that runs entirely on the local machine, with no account and no cloud dependency.',
+    note: 'Latest release v1.3.0; analytics and geographic mapping are not yet released.',
     status: {
       label: 'Developed',
       tone: 'developed',
@@ -77,19 +77,19 @@ export const PROJECTS: Project[] = [
     layout: 'split',
     record: [
       { label: 'Status', value: 'Developed' },
-      { label: 'Category', value: 'To be announced' },
+      { label: 'Category', value: 'Local news intelligence' },
       { label: 'Organization', value: 'Project 001' },
-      { label: 'Public record', value: 'Description pending' },
+      { label: 'Public record', value: 'v1.3.0 release' },
     ],
   },
   {
     id: 'aegis',
     index: '03',
     name: 'Aegis',
-    category: 'Previous initiative',
+    category: 'Security audit tool',
     description:
-      'Aegis is a previous Project 001 initiative currently on hold while its concept and direction undergo a planned redesign.',
-    note: 'Aegis is paused rather than discontinued. Development is not currently progressing.',
+      'Aegis is the first SKILL.md built by Project 001: a local-first security audit tool for AI systems. It scans secrets, dependencies, code patterns, configuration, and infrastructure without sending data to the cloud.',
+    note: 'v1.8.0 shipped with all five scanning layers; a modular v2 redesign is a draft and not yet approved.',
     status: {
       label: 'On Hold',
       note: 'Under Redesign',
@@ -100,9 +100,9 @@ export const PROJECTS: Project[] = [
     layout: 'quiet',
     record: [
       { label: 'Status', value: 'On Hold / Under Redesign' },
-      { label: 'Category', value: 'Previous initiative' },
+      { label: 'Category', value: 'Security audit tool' },
       { label: 'Organization', value: 'Project 001' },
-      { label: 'Public record', value: 'Redesign pending' },
+      { label: 'Public record', value: 'v1.8.0 release' },
     ],
   },
 ];
