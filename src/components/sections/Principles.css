@@ -1,0 +1,120 @@
+.principles {
+  position: relative;
+  overflow: clip;
+}
+
+.principles::after {
+  content: '001';
+  position: absolute;
+  right: calc(var(--gutter) * -1);
+  bottom: -0.22em;
+  z-index: 0;
+  color: rgba(245, 240, 230, 0.035);
+  font-family: var(--font-display);
+  font-size: clamp(12rem, 28vw, 28rem);
+  font-weight: 300;
+  letter-spacing: -0.06em;
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+.principles .container {
+  position: relative;
+  z-index: 1;
+}
+
+.principles__list {
+  border-top: 1px solid var(--line-light);
+}
+
+.principle {
+  position: relative;
+  display: grid;
+  grid-template-columns: 4.5rem minmax(0, 1fr) 8rem;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  padding-block: clamp(2rem, 4vw, 3rem);
+  border-bottom: 1px solid var(--line-light);
+  transition: background-color 0.3s var(--ease-soft);
+}
+
+.principle:hover {
+  background: rgba(245, 240, 230, 0.035);
+}
+
+.principle__index {
+  padding-top: 0.55rem;
+  color: var(--gold-light);
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.12em;
+}
+
+.principle__title {
+  color: var(--paper);
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.4vw, 3.1rem);
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+.principle__statement {
+  max-width: 41rem;
+  margin-top: 0.9rem;
+  color: var(--paper);
+  font-family: var(--font-display);
+  font-size: clamp(1.12rem, 1.6vw, 1.38rem);
+  font-style: italic;
+  line-height: 1.4;
+  text-wrap: pretty;
+}
+
+.principle__detail {
+  max-width: 40rem;
+  margin-top: 0.9rem;
+  color: rgba(245, 240, 230, 0.68);
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+.principle > .principle-glyph {
+  width: 7rem;
+  justify-self: end;
+  align-self: start;
+  opacity: 0.72;
+  transition: opacity 0.3s var(--ease-soft);
+}
+
+.principle:hover > .principle-glyph {
+  opacity: 1;
+}
+
+@media (max-width: 760px) {
+  .principle {
+    grid-template-columns: 2.4rem minmax(0, 1fr);
+    gap: 0.9rem;
+  }
+
+  .principle__body {
+    padding-right: 3.6rem;
+  }
+
+  .principle > .principle-glyph {
+    position: absolute;
+    top: clamp(2rem, 4vw, 3rem);
+    right: 0;
+    width: 3.1rem;
+    opacity: 0.55;
+  }
+}
+
+@media (max-width: 520px) {
+  .principle__body {
+    padding-right: 0;
+  }
+
+  .principle > .principle-glyph {
+    display: none;
+  }
+}

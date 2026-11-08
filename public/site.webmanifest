@@ -1,0 +1,22 @@
+{
+  "name": "Project 001",
+  "short_name": "Project 001",
+  "description": "An independent technology collective building software guided by sovereignty, composability, and security.",
+  "lang": "en",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F5F0E6",
+  "theme_color": "#F5F0E6",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

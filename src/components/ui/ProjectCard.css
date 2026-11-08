@@ -1,0 +1,351 @@
+.project {
+  position: relative;
+  min-width: 0;
+}
+
+.project--feature,
+.project--split {
+  padding-top: clamp(2.5rem, 4vw, 3.5rem);
+  border-top: 1px solid var(--line-strong);
+}
+
+.project--feature {
+  display: grid;
+  grid-template-columns: minmax(0, 1.02fr) minmax(0, 0.98fr);
+  align-items: center;
+  gap: clamp(2rem, 5vw, 4.5rem);
+}
+
+.project--split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  align-items: center;
+  gap: clamp(2rem, 5vw, 4.5rem);
+}
+
+.project--split .project__body {
+  order: 1;
+}
+
+.project--split .project__visual {
+  order: 2;
+}
+
+/* Astra — image-led plate ---------------------------------------------- */
+
+.project__plate {
+  position: relative;
+  display: grid;
+  place-items: center;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.project__plate::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to right, var(--line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--line) 1px, transparent 1px);
+  background-size: 44px 44px;
+  opacity: 0.45;
+}
+
+.project__halo {
+  position: absolute;
+  z-index: 1;
+  width: 64%;
+  aspect-ratio: 1;
+  border: 1px solid rgba(197, 162, 83, 0.55);
+  border-radius: 50%;
+}
+
+.project__logo {
+  position: relative;
+  z-index: 2;
+  width: 47%;
+  max-width: 300px;
+  height: auto;
+  transition: transform 0.6s var(--ease-out);
+}
+
+.project--feature:hover .project__logo {
+  transform: scale(1.015);
+}
+
+.project__caption {
+  position: absolute;
+  right: 1.1rem;
+  bottom: 0.95rem;
+  left: 1.1rem;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 0.55rem;
+  border-top: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink-muted);
+  font-family: var(--font-mono);
+  font-size: 0.55rem;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+/* Nova — typographic identity plate ------------------------------------ */
+
+.project__wordmark-plate {
+  position: relative;
+  display: grid;
+  place-items: center;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border: 1px solid var(--burgundy-deep);
+  background: var(--burgundy);
+  color: var(--paper);
+}
+
+.project__wordmark-plate::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to right, rgba(245, 240, 230, 0.12) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(245, 240, 230, 0.12) 1px, transparent 1px);
+  background-size: 44px 44px;
+  opacity: 0.7;
+}
+
+.project__wordmark-ring {
+  position: absolute;
+  width: 72%;
+  aspect-ratio: 1;
+  border: 1px solid rgba(216, 190, 130, 0.5);
+  border-radius: 50%;
+}
+
+.project__wordmark-ring::before {
+  content: '';
+  position: absolute;
+  inset: 18%;
+  border: 1px dashed rgba(216, 190, 130, 0.35);
+  border-radius: 50%;
+}
+
+.project__wordmark {
+  position: relative;
+  z-index: 2;
+  color: var(--paper);
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 6vw, 5.4rem);
+  font-weight: 300;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.project__wordmark-index {
+  position: absolute;
+  top: 1rem;
+  left: 1.1rem;
+  z-index: 3;
+  color: var(--gold-light);
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+}
+
+.project__wordmark-label {
+  position: absolute;
+  right: 1.1rem;
+  bottom: 0.95rem;
+  left: 1.1rem;
+  z-index: 3;
+  padding-top: 0.55rem;
+  border-top: 1px solid var(--line-light);
+  color: var(--gold-light);
+  font-family: var(--font-mono);
+  font-size: 0.55rem;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+/* Aegis — understated archive strip ------------------------------------ */
+
+.project--quiet {
+  display: grid;
+  grid-template-columns: minmax(0, 0.32fr) minmax(0, 1fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  padding: clamp(1.4rem, 3vw, 2.5rem);
+  border: 1px solid var(--line-strong);
+  background: var(--surface);
+}
+
+.project__quiet-visual {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+  min-height: 14rem;
+  padding-right: clamp(1.5rem, 3vw, 2.5rem);
+  border-right: 1px solid var(--line-strong);
+}
+
+.project__quiet-label {
+  color: var(--gold-ink);
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.12em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.project__quiet-mark {
+  color: var(--ink-muted);
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.4vw, 2.8rem);
+  font-style: italic;
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+.project__quiet-hatch {
+  display: block;
+  height: 1.4rem;
+  background-image: repeating-linear-gradient(
+    135deg,
+    transparent 0 6px,
+    var(--line-strong) 6px 7px
+  );
+}
+
+.project--quiet .project__name {
+  font-size: clamp(2.4rem, 4vw, 3.4rem);
+}
+
+/* Shared project body -------------------------------------------------- */
+
+.project__body {
+  min-width: 0;
+}
+
+.project__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.project__index {
+  color: var(--gold-ink);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.project__name {
+  margin-top: clamp(1.25rem, 2.5vw, 1.75rem);
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 5vw, 4.6rem);
+  font-weight: 300;
+  letter-spacing: -0.03em;
+  line-height: 0.95;
+}
+
+.project__category {
+  margin-top: 0.55rem;
+  color: var(--ink-muted);
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.project__description {
+  max-width: 36rem;
+  margin-top: 1.25rem;
+  color: var(--ink-soft);
+  font-size: 0.98rem;
+  line-height: 1.72;
+}
+
+.project__note {
+  max-width: 36rem;
+  margin-top: 1rem;
+  padding-left: 0.9rem;
+  border-left: 1px solid var(--gold);
+  color: var(--ink-muted);
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.project__action {
+  margin-top: 1.6rem;
+}
+
+@media (max-width: 960px) {
+  .project--feature,
+  .project--split {
+    grid-template-columns: 1fr;
+    gap: 2.25rem;
+  }
+
+  .project--split .project__body,
+  .project--split .project__visual {
+    order: initial;
+  }
+
+  .project__plate,
+  .project__wordmark-plate {
+    max-width: 640px;
+  }
+}
+
+@media (max-width: 760px) {
+  .project--quiet {
+    grid-template-columns: 1fr;
+  }
+
+  .project__quiet-visual {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    min-height: 0;
+    padding-right: 0;
+    padding-bottom: 1rem;
+    border-right: 0;
+    border-bottom: 1px solid var(--line-strong);
+  }
+
+  .project__quiet-hatch {
+    width: 5rem;
+    height: 1rem;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 560px) {
+  .project__top {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .project__caption,
+  .project__wordmark-label {
+    font-size: 0.5rem;
+  }
+
+  .project__wordmark {
+    font-size: clamp(2.8rem, 13vw, 4rem);
+  }
+}

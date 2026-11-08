@@ -1,0 +1,16 @@
+.principle-glyph {
+  display: block;
+  width: 100%;
+  color: var(--gold);
+}
+
+.principle-glyph svg {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.principle-glyph__solid {
+  fill: currentColor;
+  stroke: none;
+}

@@ -1,0 +1,8 @@
+.projects {
+  background: var(--paper);
+}
+
+.projects__list {
+  display: grid;
+  gap: clamp(3rem, 6vw, 5.5rem);
+}

@@ -1,0 +1,103 @@
+.about__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: clamp(2.5rem, 6vw, 6rem);
+  align-items: start;
+}
+
+.about__intro {
+  max-width: 38rem;
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: clamp(1.65rem, 2.7vw, 2.45rem);
+  font-weight: 300;
+  letter-spacing: -0.018em;
+  line-height: 1.26;
+  text-wrap: pretty;
+}
+
+.about__body {
+  max-width: 38rem;
+  margin-top: 1.75rem;
+  color: var(--ink-soft);
+  font-size: 0.98rem;
+  line-height: 1.75;
+}
+
+.about__body p + p {
+  margin-top: 1rem;
+}
+
+.about__quote {
+  max-width: 34rem;
+  margin-top: clamp(2rem, 4vw, 3rem);
+  padding: 1.35rem 0 1.35rem 1.6rem;
+  border-left: 2px solid var(--gold);
+}
+
+.about__quote p {
+  color: var(--burgundy);
+  font-family: var(--font-display);
+  font-size: clamp(1.3rem, 2vw, 1.6rem);
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.about__quote cite {
+  display: block;
+  margin-top: 0.9rem;
+  color: var(--ink-muted);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-style: normal;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.about__facts {
+  border-top: 1px solid var(--line-strong);
+}
+
+.about__fact {
+  display: grid;
+  grid-template-columns: 8.5rem minmax(0, 1fr);
+  gap: 1.5rem;
+  padding-block: 1.3rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.about__fact dt {
+  padding-top: 0.2rem;
+  color: var(--gold-ink);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.about__fact dd {
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+
+@media (max-width: 900px) {
+  .about__grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .about__facts {
+    max-width: 44rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .about__fact {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+    padding-block: 1.15rem;
+  }
+}

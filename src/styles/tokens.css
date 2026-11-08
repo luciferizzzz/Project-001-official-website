@@ -1,0 +1,58 @@
+/* ==========================================================================
+   Design tokens — Project 001
+   Brand palette, typography, spacing and layout constants live here.
+   ========================================================================== */
+
+:root {
+  /* Brand colour */
+  --burgundy: #701c2c;
+  --burgundy-deep: #58131f;
+  --burgundy-soft: #8d3343;
+  --gold: #c5a253;
+  --gold-ink: #74581f;
+  --gold-light: #d8be82;
+  --navy: #26354a;
+  --navy-deep: #1c2838;
+  --paper: #f5f0e6;
+  --paper-deep: #efe9dd;
+  --surface: #e8e5df;
+
+  /* Text */
+  --ink: #26354a;
+  --ink-strong: #1e2a3b;
+  --ink-soft: #4e5a6a;
+  --ink-muted: #566171;
+
+  /* Rules and borders */
+  --line: rgba(38, 53, 74, 0.16);
+  --line-strong: rgba(38, 53, 74, 0.32);
+  --line-light: rgba(245, 240, 230, 0.18);
+  --line-light-strong: rgba(245, 240, 230, 0.38);
+
+  /* Focus */
+  --focus: #701c2c;
+  --focus-light: #e3c98f;
+
+  /* Type */
+  --font-display: 'Newsreader', 'Iowan Old Style', 'Palatino Linotype', Georgia,
+    serif;
+  --font-sans: 'Instrument Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'Cascadia Mono', Consolas, monospace;
+
+  /* Layout */
+  --container: 1200px;
+  --gutter: clamp(1.25rem, 4.5vw, 3.5rem);
+  --header-height: 76px;
+  --section-space: clamp(4.75rem, 9vw, 8.5rem);
+  --radius: 2px;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.22, 0.68, 0.24, 1);
+  --ease-soft: cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+@media (max-width: 720px) {
+  :root {
+    --header-height: 66px;
+  }
+}
