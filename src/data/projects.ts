@@ -40,9 +40,10 @@ export const PROJECTS: Project[] = [
     id: 'astra',
     index: '01',
     name: 'Astra',
-    category: 'Desktop application',
+    category: 'Desktop visual web designer',
     description:
-      'Astra is a desktop application developed under Project 001. It is an existing product with its own identity and development direction.',
+      'Astra is a local-first desktop visual web designer for Windows. It opens an existing website project, renders it in a live canvas, and edits standard HTML, CSS, and JavaScript in place — with no account, no cloud, and no proprietary format.',
+    note: 'Internal build 0.1.0 is read-only: open, render, select, and inspect. Visual editing and saving are still in development.',
     status: {
       label: 'Developed',
       tone: 'developed',
@@ -55,9 +56,9 @@ export const PROJECTS: Project[] = [
     layout: 'feature',
     record: [
       { label: 'Status', value: 'Developed' },
-      { label: 'Category', value: 'Desktop application' },
+      { label: 'Category', value: 'Desktop visual web designer' },
       { label: 'Organization', value: 'Project 001' },
-      { label: 'Public record', value: 'Initial' },
+      { label: 'Public record', value: 'Internal build 0.1.0' },
     ],
   },
   {
@@ -67,7 +68,7 @@ export const PROJECTS: Project[] = [
     category: 'Local news intelligence',
     description:
       'Nova is a local-first news intelligence system. It gathers RSS sources into a private, searchable dashboard that runs entirely on the local machine, with no account and no cloud dependency.',
-    note: 'Latest release v1.3.0; analytics and geographic mapping are not yet released.',
+    note: 'Latest release: v2.0.1 (October 2026).',
     status: {
       label: 'Developed',
       tone: 'developed',
@@ -79,7 +80,7 @@ export const PROJECTS: Project[] = [
       { label: 'Status', value: 'Developed' },
       { label: 'Category', value: 'Local news intelligence' },
       { label: 'Organization', value: 'Project 001' },
-      { label: 'Public record', value: 'v1.3.0 release' },
+      { label: 'Public record', value: 'v2.0.1 release' },
     ],
   },
   {
