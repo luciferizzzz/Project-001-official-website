@@ -1,6 +1,5 @@
 # Project 001 — robots.txt
-# Replace https://project001.example with the official domain before launch.
 User-agent: *
 Allow: /
 
-Sitemap: https://project001.example/sitemap.xml
+Sitemap: https://project-001-official-website.vercel.app/sitemap.xml

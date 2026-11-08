@@ -223,9 +223,13 @@ for (const token of forbidden) {
   if (html.includes(token)) fail(`forbidden token in HTML: "${token}"`);
 }
 
-// The placeholder domain is intentional, but must be the documented one.
-if (!html.includes('https://project001.example')) {
-  fail('documented placeholder domain missing');
+// The canonical URL must be the production URL, not a placeholder.
+const SITE_URL = 'https://project-001-official-website.vercel.app';
+if (!html.includes(`<link rel="canonical" href="${SITE_URL}/"`)) {
+  fail(`canonical URL does not match the production URL (${SITE_URL}/)`);
+}
+if (!html.includes(`<meta property="og:url" content="${SITE_URL}/"`)) {
+  fail('og:url does not match the production URL');
 }
 
 // ---------------------------------------------------------------------------

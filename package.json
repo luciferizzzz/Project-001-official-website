@@ -4,6 +4,9 @@
   "version": "1.0.0",
   "private": true,
   "description": "Official website for Project 001, an independent technology collective.",
+  "engines": {
+    "node": "22.x"
+  },
   "scripts": {
     "dev": "vite",
     "start": "vite",
