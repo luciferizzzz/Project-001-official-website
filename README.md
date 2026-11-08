@@ -4,7 +4,7 @@ Single-page website for **Project 001**, an independent technology collective bu
 software guided by sovereignty, composability, and security.
 
 **Tagline:** _Freedom Through Technology._
-**Live:** https://project-001-official-website.vercel.app/
+**Live:** https://project001-official-website.vercel.app/
 
 ---
 
@@ -131,7 +131,7 @@ root, not a sub-path.
 ### Domain changes
 
 The production URL is currently
-`https://project-001-official-website.vercel.app/`. If you move to a custom domain,
+`https://project001-official-website.vercel.app/`. If you move to a custom domain,
 update it in:
 
 - `index.html` (canonical, `og:url`, `og:image`, `twitter:image`, JSON-LD)

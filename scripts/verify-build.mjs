@@ -224,7 +224,7 @@ for (const token of forbidden) {
 }
 
 // The canonical URL must be the production URL, not a placeholder.
-const SITE_URL = 'https://project-001-official-website.vercel.app';
+const SITE_URL = 'https://project001-official-website.vercel.app';
 if (!html.includes(`<link rel="canonical" href="${SITE_URL}/"`)) {
   fail(`canonical URL does not match the production URL (${SITE_URL}/)`);
 }
